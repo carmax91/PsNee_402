@@ -192,8 +192,8 @@ start:
     }
 
     // wait for clock to go high..
-    while (digitalReadFast(sqck) == 0); //((bitRead(SUBQPORT, SQCKBIT)) == 0);
-                                     /*
+    while (digitalReadFast(sqck) == 0); 
+   /*
     sample = digitalRead (subq);//bitRead(SUBQPORT, SUBQBIT);
     bitbuf |= sample << bitpos;
 
