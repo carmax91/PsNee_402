@@ -1,7 +1,7 @@
 # PsNee_402
 PsNee v7 port for the ATtiny402 MCU compatible on all Ps1 boards.
 
-I have around some ATtiny402 around so why not port PsNee on this little 8-pin gem?
+I have some ATtiny402 around so why not port PsNee on this little 8-pin gem?
 Fully compatible and stealth on **ALL** Ps1 motherboards! There is virtually no noise or degradation of the laser RF signal level 
 because the code injects the SCEX string only when needed.
 
@@ -9,7 +9,7 @@ I'm just a hobbyist programmer, so please forgive any coding mistakes, syntax er
 The code is heavily based on PsNee v7 by kalymos, but I chose to follow the Arduino philosophy.
 I prioritized easy portability of the code while still using direct bit manipulation for GPIO operations to avoid as much of the Arduino platform’s “heaviness” as possible.
 
-Why not port "postal" PsNee v8? Simply because JAP bios patching is bugged (on some motherboards BIOS crashes) and until a fix came out i'm not interested in a porting...
+Why I haven't ported "postal" PsNee v8? Simply because JAP bios patching is bugged (with some BIOS menu crashes) and until a fix came out i'm not interested in a porting...
 
 **Warning:** 
 - On JAP region consoles you can ONLY play japanese backups due to BIOS protection! 
@@ -18,7 +18,8 @@ Why not port "postal" PsNee v8? Simply because JAP bios patching is bugged (on s
 ## Features
 - Full Stealth on **ALL** motherboards!
 - Virtually no noise and degradation on the laser RF signal level unlike the old oldcrow\mayumi\multimode mod.
-- Led injecting status output on chip PIN 2.
+- Led injecting status output on chip PIN 2 (You need a 1K resistor).
+- No atmega328p+16mhz cristal or other arduino uno like "big" board, simple a 8-pin ATtiny 402 chip to solder and easly fit in your console!
 
 ## Supported Playstations
 - All Playstation models, but with the SCPH-102 and JAP variants import games aren't supported.
